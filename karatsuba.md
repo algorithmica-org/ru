@@ -27,7 +27,7 @@ $$
 
 ---
 
-![divide-and-conquer](../img/divide-and-conquer.png)
+![](../img/divide-and-conquer.png)
 
 ---
 
