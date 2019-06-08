@@ -2,99 +2,99 @@
 
 ### Структуры данных
 
-* [Дерево отрезков](http://sereja.me/a/segtree)
+* [Дерево отрезков](https://algorithmica.org/ru/segtree)
   отложенные операции, динамическое, персистентное
-* [Декартово дерево](http://sereja.me/a/treap)
+* [Декартово дерево](https://algorithmica.org/ru/treap)
   treap, дерамида, неявный ключ, персистентное
-* [Дерево Фенвика](http://sereja.me/a/fenwick)
+* [Дерево Фенвика](https://algorithmica.org/ru/fenwick)
   многомерное дерево Фенвика, бинпоиск по дереву Фенвика
-* [Разреженная таблица](http://sereja.me/a/sparse-table)
+* [Разреженная таблица](https://algorithmica.org/ru/sparse-table)
   sparse table, static RMQ
-* [Битовое сжатие](http://sereja.me/a/bitset)
+* [Битовое сжатие](https://algorithmica.org/ru/bitset)
   битовые операции, std::bitset, перемножение матриц, метод Гаусса
 
 ### Общие техники
 
 * Корневая декомпозиция: она где-то есть
 
-* [Алгоритм Карацубы](http://sereja.me/a/karatsuba): введение в разделяй-и-властвуй, мастер-теорема
+* [Алгоритм Карацубы](https://algorithmica.org/ru/karatsuba): введение в разделяй-и-властвуй, мастер-теорема
 
 ### Дискретная математика
 
-* [Модулярная арифметика](http://sereja.me/a/reciprocal)
+* [Модулярная арифметика](https://algorithmica.org/ru/reciprocal)
   теорема Ферма, нахождение обратного по модулю, бинарное возведение в степень, диофантово уравнение, применения в комбинаторике, предподсчёт обратных факториалов за линейное время
 
-* [Ро-алгоритм Полларда](http://sereja.me/a/pollard)
+* [Ро-алгоритм Полларда](https://algorithmica.org/ru/pollard)
   парадокс дней рождений, факторизация за $O(\sqrt[4] n)$
 
-* [Матроиды](http://sereja.me/a/matroid)
+* [Матроиды](https://algorithmica.org/ru/matroid)
   алгоритм Радо-Эдмондса, расписания, паросочетания, линейная независимость
 
 ### Графы
 
-* [Остовные деревья](http://sereja.me/a/mst)
+* [Остовные деревья](https://algorithmica.org/ru/mst)
   алгоритм Прима, алгоритм Крускала
 
-* [Паросочетания]([http://sereja.me/a/matching](http://sereja.me/a/matching)
+* [Паросочетания]([https://algorithmica.org/ru/matching](https://algorithmica.org/ru/matching)
   алгоритм Куна, покрытие ациклического орграфа, лемма Холла
 
 ### Потоки
 
-* [Поток минимальной стоимости](http://sereja.me/a/mincost-maxflow)
+* [Поток минимальной стоимости](https://algorithmica.org/ru/mincost-maxflow)
   критерий оптимальности, отмена потока, потенциалы Джонсона, «дейкстра с потенциалами»
 
 ### Деревья
 
-* [Наименьший общий предок]([http://sereja.me/a/lca](http://sereja.me/a/lca)
+* [Наименьший общий предок]([https://algorithmica.org/ru/lca](https://algorithmica.org/ru/lca)
   LCA, двоичные подъемы, сведение LCA к RMQ, алгоритм Фараха-Колтона и Бендера
 
-* [Центроидная декомпозиция](http://sereja.me/a/centroid)
+* [Центроидная декомпозиция](https://algorithmica.org/ru/centroid)
 
-* [Heavy-light декомпозиция](http://sereja.me/a/hld)
+* [Heavy-light декомпозиция](https://algorithmica.org/ru/hld)
 
 ### Строки
 
-* [Полиномиальное хэширование](http://sereja.me/a/hashing)
+* [Полиномиальное хэширование](https://algorithmica.org/ru/hashing)
   хэши, парадокс дней рождений, хранение строк в декартовом дереве
 
-* [Поиск строки в строке](http://sereja.me/a/strings)
+* [Поиск строки в строке](https://algorithmica.org/ru/strings)
   префикс-функция, z-функция
 
-* [Бор](http://sereja.me/a/trie)
+* [Бор](https://algorithmica.org/ru/trie)
 
-* [Ахо-Корасик](http://sereja.me/a/aho-corasick)
+* [Ахо-Корасик](https://algorithmica.org/ru/aho-corasick)
 
-* [Суффиксный массив](http://sereja.me/a/suffix-array)
+* [Суффиксный массив](https://algorithmica.org/ru/suffix-array)
   построение за $O(n \log n)$, LCP
 
 ### Динамическое программирование
 
-* [Пересчёт динамики по слоям](http://sereja.me/a/dp-optimizations)
+* [Пересчёт динамики по слоям](https://algorithmica.org/ru/dp-optimizations)
   оптимизация Кнута, разделяй-и-властвуй, Convex Hull Trick, дискретный метод Лагранжа
 
 ### Оптимизация
 
-* [Метод отжига](http://sereja.me/a/annealing)
+* [Метод отжига](https://algorithmica.org/ru/annealing)
   задача о ферзях
 
 ### Разное
 
-* [Стресс-тестирование](http://sereja.me/a/stress-test)
+* [Стресс-тестирование](https://algorithmica.org/ru/stress-test)
 
 ### Теория игр
 
-* [Теория игр](http://sereja.me/a/games): эту статью определенно надо распилить на несколько
+* [Теория игр](https://algorithmica.org/ru/games): эту статью определенно надо распилить на несколько
 
 ### Высшая математика
 
-* [Линейная алгебра](http://sereja.me/a/linalg)
+* [Линейная алгебра](https://algorithmica.org/ru/linalg)
   линейные операторы, матрицы, применения к динамике, метод Гаусса
 
-* [Теорвер](http://sereja.me/a/probability)
+* [Теорвер](https://algorithmica.org/ru/probability)
 
 ### Геометрия
 
-* [Ликбез по вычислительной геометрии](http://sereja.me/a/geometry)
+* [Ликбез по вычислительной геометрии](https://algorithmica.org/ru/geometry)
   скалярное и векторное произведение, пересечение прямых, классы в C++
 
 * Выпуклые оболочки: они где-то есть
