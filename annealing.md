@@ -1,4 +1,3 @@
-
 # Метод отжига
 
 * Эвристический метод глобальной оптимизации
@@ -31,7 +30,6 @@ TODO: описание алгоритма, физическая аналогия
 
 Мы будем использовать `python`, потому что в нём удобнее строить графики. Эквивалентный код на C++ приведена сразу после.
 
-
 ```python
 import random
 
@@ -42,7 +40,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set()
 ```
-
 
 ```python
 def fitness(p):
@@ -56,7 +53,6 @@ def fitness(p):
     return s
 ```
 
-
 ```python
 n = 100 # кол-во ферзей
 k = 1000 # кол-во итераций
@@ -68,12 +64,12 @@ t = 1
 for i in range(k):
     # уменьшаем температуру
     t *= 0.99 # этот параметр лучше перебрать руками
-    
+
     # копируем перестановку и делаем небольшое изменение
     q = p[:]
     a, b = random.sample(range(n), 2)
     q[a], q[b] = q[b], q[a]
-    
+
     # считаем разницу fitness и решаем, нужно ли переходить в новое состояние
     d = fitness(q) - fitness(p)
     if d > 0 or random.random() < math.exp(d/t):
@@ -87,13 +83,7 @@ plt.show()
 
     Best score: 95
 
-
-
-![png](annealing_files/annealing_11_1.png)
-
-
 Примерно эквивалентный код на C++:
-
 
 ```python
 const int n = 100, k = 1000;
