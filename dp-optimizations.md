@@ -121,7 +121,7 @@ $$
 
 TODO: иллюстрация.
 
-TODO: мем про Скуби-Ду.
+![Паблик «Mathematical bullshit»](../img/scooby-doo.jpg)
 
 ### Ли Шао
 
