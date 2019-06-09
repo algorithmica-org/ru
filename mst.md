@@ -198,7 +198,7 @@ for (int i = 0; i < n; i++)
 
 ```c++
 // (w, (a, b))
-vector< pair<int, int> > edges;
+vector< pair< int, pair<int, int> > > edges;
 
 sort(edges.begin(), edges.end());
 
