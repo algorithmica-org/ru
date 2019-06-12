@@ -14,33 +14,29 @@
 
 * [Корневая эвристика](https://algorithmica.org/ru/sqrt)
 * [Битовое сжатие](https://algorithmica.org/ru/bitset)
-* [Разделяй-и-властвуй](https://algorithmica.org/ru/karatsuba)
+* [Пересчёт динамики по слоям](https://algorithmica.org/ru/dp-optimizations)
 :::::
 
 ::::: {.contents}
-### Дискретная математика
-
-* Алгоритм Евклида
-* [Нахождение обратного по модулю](https://algorithmica.org/ru/reciprocal)
-* [Ро-алгоритм Полларда](https://algorithmica.org/ru/pollard)
-* [Жадный алгоритм Радо-Эдмондса](https://algorithmica.org/ru/matroid)
-* [Решето Эратосфена](http://e-maxx.ru/algo/eratosthenes_sieve)
-* [Китайская теорема об остатках](http://e-maxx.ru/algo/chinese_theorem)
-* [Быстрое преобразование Фурье](http://e-maxx.ru/algo/fft_multiply)
-:::::
-
-::::: {.contents}
-### Переборные задачи
-
-* Meet in the middle
-* [Дискретное логарифмирование](http://e-maxx.ru/algo/discrete_log)
-:::::
-
-::::: {.contents}
-### Высшая математика
+### Математика
 
 * [Линейная алгебра](https://algorithmica.org/ru/linalg)
 * [Теория вероятностей](https://algorithmica.org/ru/probability)
+* [Алгоритм Карацубы](https://algorithmica.org/ru/karatsuba)
+* [Быстрое преобразование Фурье](https://algorithmica.org/ru/fft)
+:::::
+
+---
+
+::::: {.contents}
+### Комбинаторика и ТЧ
+
+* [Нахождение обратного по модулю](https://algorithmica.org/ru/reciprocal)
+* [Жадный алгоритм Радо-Эдмондса](https://algorithmica.org/ru/matroid)
+* [Ро-алгоритм Полларда](https://algorithmica.org/ru/pollard)
+* [Китайская теорема об остатках](http://e-maxx.ru/algo/chinese_theorem)
+* [Решето Эратосфена](http://e-maxx.ru/algo/eratosthenes_sieve)
+* [Дискретное логарифмирование](http://e-maxx.ru/algo/discrete_log)
 :::::
 
 ::::: {.contents}
@@ -49,10 +45,10 @@
 * [Остовные деревья](https://algorithmica.org/ru/mst)
 * [Паросочетания](https://algorithmica.org/ru/matching)
 * [Поток минимальной стоимости](https://algorithmica.org/ru/mincost-maxflow)
-* [Алгоритм Диница](http://e-maxx.ru/algo/dinic)
 * [Наименьший общий предок](https://algorithmica.org/ru/lca)
 * [Центроидная декомпозиция](https://algorithmica.org/ru/centroid)
 * [Heavy-light декомпозиция](https://algorithmica.org/ru/hld)
+* [Алгоритм Диница](http://e-maxx.ru/algo/dinic)
 * [2-SAT](http://e-maxx.ru/algo/2_sat)
 :::::
 
@@ -61,39 +57,38 @@
 
 * [Полиномиальное хэширование](https://algorithmica.org/ru/hashing)
 * [Префикс- и z-функция](https://algorithmica.org/ru/strings)
-* [Бор](https://algorithmica.org/ru/trie)
+* [Префиксное дерево (бор)](https://algorithmica.org/ru/trie)
 * [Алгоритм Ахо-Корасик](https://algorithmica.org/ru/aho-corasick)
 * [Суффиксный массив](https://algorithmica.org/ru/suffix-array)
-* [Суффиксный автомат](http://e-maxx.ru/algo/suffix_automata)
+* [Суффиксный автомат](https://algorithmica.org/ru/suffix-automaton)
+* [Палиндромы](https://algorithmica.org/ru/palindromes)
 :::::
 
-::::: {.contents}
-### Динамическое программирование
-
-* [Оптимизации пересчёта динамики по слоям](https://algorithmica.org/ru/dp-optimizations)
-:::::
+---
 
 ::::: {.contents}
-### Оптимизация
+### Геометрия
 
-* [Метод отжига](https://algorithmica.org/ru/annealing)
-:::::
-
-::::: {.contents}
-### Разное
-
-* [Стресс-тестирование](https://algorithmica.org/ru/stress-test)
+* [Ликбез по вычислительной геометрии](https://algorithmica.org/ru/geometry)
+* [Выпуклые оболочки](https://algorithmica.org/ru/convex-hulls)
 :::::
 
 ::::: {.contents}
 ### Теория игр
 
 * [Теория игр](https://algorithmica.org/ru/games)
+* [Игры с неполной информацией](https://algorithmica.org/ru/imperfect-information)
 :::::
 
 ::::: {.contents}
-### Геометрия
+### Разное
 
-* [Ликбез по вычислительной геометрии](https://algorithmica.org/ru/geometry)
-* Выпуклые оболочки
+* [Метод отжига](https://algorithmica.org/ru/annealing)
+* [Стресс-тестирование](https://algorithmica.org/ru/stress-test)
 :::::
+
+---
+
+<div style='margin-top: 50px; margin-right: 25px; text-align: right'>
+<a href='https://github.com/algorithmica-org/articles'>Есть чем дополнить?</a>
+</div>
