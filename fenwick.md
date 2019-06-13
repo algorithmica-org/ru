@@ -1,4 +1,4 @@
-<div style='border: 1px solid #A7A; border-left: 7px solid rgb(204, 153, 204); padding: 6px; padding-left: 8px; padding-bottom: 6px; font-size: 14px; line-height: 1.5em'>
+<div style='border: 1px solid #A7A; border-left: 7px solid rgb(204, 153, 204); padding: 6px; padding-left: 8px; padding-bottom: 6px; font-size: 14px; line-height: 1.5em; margin-top: 5px;'>
 <img src='http://lurkmore.so/images/e/e1/Nohate.jpg' style='float: left; margin-right: 8px;'>
 <b>НЯ!</b>
 <br>Эта статья полна любви и обожания.
