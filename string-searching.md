@@ -44,7 +44,7 @@ cout << s + "#" + t << endl;
 cout << slow_prefix_function(s + "#" + t) << endl;
 ```
 
-```c++
+```bash
 choose#choose life. choose a job. choose a career. choose a family. choose a fu...
 0000000123456000000012345600000000123456000100000001234560000000000012345600000000
 ```
@@ -57,7 +57,7 @@ choose#choose life. choose a job. choose a career. choose a family. choose a fu.
 
 Рассмотрим ещё несколько примеров префикс-функций и попытаемся найти закономерности:
 
-```c++
+```bash
 aaaaa
 01234
 
@@ -131,7 +131,7 @@ vector<int> slow_z_function (string s) {
 }
 ```
 
-```c++
+```bash
 aaaaa
 04321
 
