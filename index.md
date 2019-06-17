@@ -63,7 +63,7 @@
 ::::: {.contents}
 ### Геометрия
 
-* [Ликбез по вычислительной геометрии](https://algorithmica.org/ru/geometry)
+* [Ликбез по базовой геометрии](https://algorithmica.org/ru/geometry)
 * [Выпуклые оболочки](https://algorithmica.org/ru/convex-hulls)
 :::::
 
@@ -83,6 +83,6 @@
 
 ---
 
-<div style='margin-top: 50px; margin-right: 25px; text-align: right'>
+<div style='margin-top: 80px; margin-right: 25px; text-align: right'>
 <a href='https://github.com/algorithmica-org/articles'>Есть чем дополнить?</a>
 </div>
