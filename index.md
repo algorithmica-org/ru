@@ -34,9 +34,6 @@
 * [Нахождение обратного по модулю](https://algorithmica.org/ru/reciprocal)
 * [Жадный алгоритм Радо-Эдмондса](https://algorithmica.org/ru/matroid)
 * [Ро-алгоритм Полларда](https://algorithmica.org/ru/pollard)
-* [Китайская теорема об остатках](http://e-maxx.ru/algo/chinese_theorem)
-* [Решето Эратосфена](http://e-maxx.ru/algo/eratosthenes_sieve)
-* [Дискретное логарифмирование](http://e-maxx.ru/algo/discrete_log)
 :::::
 
 ::::: {.contents}
@@ -48,8 +45,6 @@
 * [Наименьший общий предок](https://algorithmica.org/ru/lca)
 * [Центроидная декомпозиция](https://algorithmica.org/ru/centroid)
 * [Heavy-light декомпозиция](https://algorithmica.org/ru/hld)
-* [Алгоритм Диница](http://e-maxx.ru/algo/dinic)
-* [2-SAT](http://e-maxx.ru/algo/2_sat)
 :::::
 
 ::::: {.contents}
@@ -57,7 +52,6 @@
 
 * [Полиномиальное хэширование](https://algorithmica.org/ru/hashing)
 * [Префикс- и z-функция](https://algorithmica.org/ru/strings)
-* [Префиксное дерево (бор)](https://algorithmica.org/ru/trie)
 * [Алгоритм Ахо-Корасик](https://algorithmica.org/ru/aho-corasick)
 * [Суффиксный массив](https://algorithmica.org/ru/suffix-array)
 * [Суффиксный автомат](https://algorithmica.org/ru/suffix-automaton)
