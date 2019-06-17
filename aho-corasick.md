@@ -140,10 +140,10 @@ Vertex* go(Vertex *v, int c);
 
 Vertex* link(Vertex *v) {
     if (!v->link) {
-        // строк длины меньше двух суффиксная ссылка это сам корень
+        // для строк длины меньше двух суффиксная ссылка это корень
         if (v == root || v->p == root)
             v->link = root;
-        else // иначе формула работает
+        else // для остальных случаев формула работает
             v->link = go(link(v->p), v->pch);
     }
     return v->link;
@@ -157,7 +157,7 @@ Vertex* go(Vertex *v, int c) {
         // если перехода нет из корня, то нужно сделать петлю
         else if (v == root)
             v->go[c] = root;
-        else // иначе формула работает
+        else // для остальных случаев формула работает
             v->go[c] = go(link(v), c);
     }
     return v->go[c];
