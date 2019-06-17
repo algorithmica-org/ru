@@ -51,7 +51,7 @@
 ### Строки
 
 * [Полиномиальное хэширование](https://algorithmica.org/ru/hashing)
-* [Префикс- и z-функция](https://algorithmica.org/ru/strings)
+* [Префикс- и z-функция](https://algorithmica.org/ru/string-searching)
 * [Алгоритм Ахо-Корасик](https://algorithmica.org/ru/aho-corasick)
 * [Суффиксный массив](https://algorithmica.org/ru/suffix-array)
 * [Суффиксный автомат](https://algorithmica.org/ru/suffix-automaton)
