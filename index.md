@@ -21,7 +21,7 @@
 ### Математика
 
 * [Линейная алгебра](https://algorithmica.org/ru/linalg)
-* [Теория вероятностей](https://algorithmica.org/ru/probability)
+* Теория вероятностей
 * [Алгоритм Карацубы](https://algorithmica.org/ru/karatsuba)
 * [Быстрое преобразование Фурье](https://algorithmica.org/ru/fft)
 :::::
@@ -54,7 +54,7 @@
 * [Префикс- и z-функция](https://algorithmica.org/ru/string-searching)
 * [Алгоритм Ахо-Корасик](https://algorithmica.org/ru/aho-corasick)
 * [Суффиксный массив](https://algorithmica.org/ru/suffix-array)
-* [Суффиксный автомат](https://algorithmica.org/ru/suffix-automaton)
+* Суффиксный автомат
 * [Палиндромы](https://algorithmica.org/ru/palindromes)
 :::::
 
@@ -70,8 +70,8 @@
 ::::: {.contents}
 ### Теория игр
 
-* [Теория игр](https://algorithmica.org/ru/games)
-* [Игры с неполной информацией](https://algorithmica.org/ru/imperfect-information)
+* Теория игр
+* Игры с неполной информацией
 :::::
 
 ::::: {.contents}
