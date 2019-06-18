@@ -60,7 +60,7 @@
 
 Примерно эквивалентный код на C++:
 
-```python
+```c++
 const int n = 100;  // размер доски
 const int k = 1000; // количество итераций алгоритма
 
@@ -84,7 +84,7 @@ int main() {
     vector<int> v(n);
     iota(v.begin(), v.end(), 0);
     shuffle(v.begin(), v.end());
-    int ans = f(v); // текущий лучшмй ответ 
+    int ans = f(v); // текущий лучший ответ 
 
     double t = 1;
     for (int i = 0; i < k && ans < n; i++) {
