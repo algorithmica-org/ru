@@ -62,6 +62,7 @@
 * [Наименьший общий предок](https://algorithmica.org/ru/lca)
   запросы на путях и уровнях, двоичные подъемы, lca $\leftrightarrow$ rmq
 * [Центроидная декомпозиция](https://algorithmica.org/ru/centroid)
+  подсчёт путей с заданным свойством, запросы на путях
 * [Heavy-light декомпозиция](https://algorithmica.org/ru/hld)
 :::::
 
@@ -71,6 +72,7 @@
 * [Полиномиальное хэширование](https://algorithmica.org/ru/hashing)
   общее хэширование, вероятность коллизии, дд для строк
 * [Префикс- и z-функция](https://algorithmica.org/ru/string-searching)
+  алгортм кнута-морриса-пратта, нахождение строки в строке
 * [Алгоритм Ахо-Корасик](https://algorithmica.org/ru/aho-corasick)
   префиксное дерево, построение автомата ленивой динамикой
 * [Суффиксный массив](https://algorithmica.org/ru/suffix-array)
@@ -109,6 +111,6 @@
 
 ---
 
-<div style='margin-top: 80px; margin-right: 25px; text-align: right'>
+<div style='margin-top: 50px; margin-right: 25px; text-align: right'>
 <a href='https://github.com/algorithmica-org/articles'>Есть чем дополнить?</a>
 </div>
