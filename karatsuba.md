@@ -42,13 +42,13 @@ $$
 **B.** Если $c = \log_b a$, то
 
 $$
-\sum_{k=0}^{\log_b n} (\frac{a}{b^c})^k = \sum_{k=0}^{\log_b n} 1^k = \Theta(n^c \log_b n)
+T(n) = n^c \sum_{k=0}^{\log_b n} (\frac{a}{b^c})^k = n^c \sum_{k=0}^{\log_b n} 1^k = \Theta(n^c \log_b n)
 $$
 
 **C.** Если $c < \log_b a$, то так как сумма прогрессии асимптотически эквивалентна своему старшему элементу,
 
 $$
-n^c \sum_{k=0}^{\log_b n} (\frac{a}{b^c})^k = \Theta(n^c (\frac{a}{b^c})^{\log_b n}) = \Theta(n^c \cdot \frac{a^{\log_b n}}{n^c}) = \Theta(a^{\log_b n}) = \Theta(n^{\log_b a})
+T(n) = n^c \sum_{k=0}^{\log_b n} (\frac{a}{b^c})^k = \Theta(n^c (\frac{a}{b^c})^{\log_b n}) = \Theta(n^c \cdot \frac{a^{\log_b n}}{n^c}) = \Theta(a^{\log_b n}) = \Theta(n^{\log_b a})
 $$
 
 **Примечание.** Для более точных оценок асимптотики «мерджа» теорема ничего не говорит. Например, если мердж занимает $\Theta(n \log n)$ и задача разбивается каждый раз на две части, то асимптотика будет равна:
