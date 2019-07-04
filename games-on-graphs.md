@@ -70,7 +70,7 @@ while (!q.empty()) {
             if (status[v] == loss)
                 status[u] = win;
             // все ребра u ведут в выигрышные вершины -- значит она проигрышная
-            if (status[v] == win && cnt[u] == 0) {
+            if (status[v] == win && cnt[u] == 0)
                 status[u] = loss;
             // если после проверок у вершины определилась выигрышность, то её можно добавить в очередь
             if (status[v] != unknown)

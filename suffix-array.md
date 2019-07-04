@@ -7,7 +7,7 @@
 
 <img width='300px' src='https://pp.userapi.com/c850424/v850424161/e50d3/8cE5bDbXRHk.jpg'>
 
-*<center>«<a href='https://vk.com/al_feed.php?w=wall-174312931_1022'>Паблик с тупыми шутками про проганье</a>»</center>*
+<center>«<a href='https://vk.com/al_feed.php?w=wall-174312931_1022'>*Паблик с тупыми шутками про проганье*</a>»</center>
 
 ## Мотивация
 
