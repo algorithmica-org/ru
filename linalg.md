@@ -2,7 +2,7 @@
 
 **Определение**. Функция $f: \mathbb{R}^n \to \mathbb{R}^m$ называется *линейной*, если для неё выполнено
 
-1. $ f(x+y) = f(x) + f(y)$
+1. $f(x+y) = f(x) + f(y)$
 2. $f(ax) = a f(x), \; a \in \mathbb{R}$
 
 Примеры:
@@ -100,7 +100,7 @@ matrix operator* (matrix a, matrix b) {
     for (int i = 0; i < a.n; i++)
         for (int j = 0; j < b.m; j++)
             for (int k = 0; k < a.m; k++)
-                c[i][j] += a[i][k] * b[i][k];
+                c[i][j] += a[i][k] * b[k][j];
     return c;
 }
 ```
