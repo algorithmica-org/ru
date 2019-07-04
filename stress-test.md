@@ -70,8 +70,6 @@ int n;
 int stupid() {
     int n;
     cin >> n;
-    for (int i = 0; i < n; i++) 
-        cin >> a[i];
     int ans = 1e9;
     for (int i = 0; i < n; i++) 
         ans = min(ans, a[i]);
@@ -81,8 +79,6 @@ int stupid() {
 int smart() {
     int n;
     cin >> n;
-    for (int i = 0; i < n; i++) 
-        cin >> a[i];
     int ans = 1e9;
     for (int i = 1; i < n; i++) 
         ans = min(ans, a[i]);
