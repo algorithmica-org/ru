@@ -131,14 +131,14 @@ while (q.size()) {
 ```c++
 int _p[maxn];
 
-int p (int v) {
+int p(int v) {
     if (_p[v] == v)
         return v;
     else
         return p(_p[v]);
 }
 
-void unite (int a, int b) {
+void unite(int a, int b) {
     a = p(a), b = p(b);
     _p[a] = b;
 }
@@ -164,7 +164,7 @@ int _p[maxn], s[maxn];
 
 int p (int v) { return (_p[v] == v) ? v : _p[v] = p(_p[v]); }
 
-void unite (int a, int b) {
+void unite(int a, int b) {
     a = p(a), b = p(b);
     if (s[a] > s[b])
         swap(a, b);
