@@ -11,7 +11,7 @@
 
 Сегодня мы поговорим о разных задачах на корневых деревьях. Они все бесполезны в реальной жизни, но очень красивые, и поэтому часто встречаются на олимпиадах.
 
-![dfs](https://raw.githubusercontent.com/e-maxx-eng/e-maxx-eng/master/img/LCA_Euler.png)
+![](https://raw.githubusercontent.com/e-maxx-eng/e-maxx-eng/master/img/LCA_Euler.png)
 
 ## Напоминание: DFS
 
@@ -63,7 +63,7 @@ void dfs (int v) {
 
 По-английский эта задача называется *Least Common Ancestor*. Есть много разных способов её решать, и мы рассмотрим основные.
 
-![lca](http://homepages.kcbbs.gen.nz/tonyg/pictures/least-common-ancestor.png)
+![](http://homepages.kcbbs.gen.nz/tonyg/pictures/least-common-ancestor.png)
 
 Для лучшего понимания: медленно (за линейное время) это можно делать так:
 
