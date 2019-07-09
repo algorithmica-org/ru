@@ -10,7 +10,7 @@
 * [Дерево Фенвика](https://algorithmica.org/ru/fenwick)
   почему работает, многомерный случай, бинарный поиск
 * [Разреженная таблица](https://algorithmica.org/ru/sparse-table)
-  static rmq, многомерный случай
+  static rmq, многомерный случай, disjoint st
 :::::
 
 ::::: {.contents}
