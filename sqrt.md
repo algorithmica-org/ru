@@ -229,10 +229,53 @@ for (int i = 0; i < c; i++) {
 
 3. Все вершины тяжелые. Аналогично — тип третьей вершины в разборе предыдущего случая нигде не использовался; важно лишь то, что тяжелых вершин $b$ немного.
 
-Само решение максимально простое:
+Само решение максимально простое: отсортируем вершины графа по их степени, ориентируем ребра $v \rightarrow u, v \le u$. Теперь внутренним циклом будем считать пути $v \rightarrow u \rightarrow w, v \le u \le w$, а потом проверять существование ребра $v \rightarrow w$.
 
 ```c++
-// TODO: законтрибьютите кто-нибудь реализацию
+int vert[maxn], deg[maxn];
+vector<int> g[maxn];
+
+ll solve() {
+    for (int i = 0; i < n; i++) {
+        vert[i] = i;
+    }
+    for (int i = 0; i < m; i++) {
+        int a, b;
+        cin >> a >> b;
+        deg[a]++;
+        deg[b]++;
+        g[a].push_back(b);
+        g[b].push_back(a);
+    }
+    sort(vert, vert + n, [&](int a, int b) {
+        return make_pair(deg[a], a) < make_pair(deg[b], b);
+    });
+    for (int i = 0; i < n; i++) {
+        sort(g[i].rbegin(), g[i].rend(), [&](int a, int b) {
+            return make_pair(deg[a], a) < make_pair(deg[b], b);
+        });
+        while (g[i].size() && make_pair(deg[g[i].back()], g[i].back()) < make_pair(deg[i], i)) {
+            g[i].pop_back();
+        }
+        reverse(g[i].begin(), g[i].end());
+    }
+    ll ans = 0;
+    for (int i = 0; i < n; i++) {
+        int cur = vert[i];
+        for (auto v : g[cur]) {
+            cnt[v]++;
+        }
+        for (auto v : g[cur]) {
+            for (auto it : g[v]) {
+                ans += cnt[it];
+            }
+        }
+        for (auto v : g[cur]) {
+            cnt[v]--;
+        }
+    }
+    return ans;
+}
 ```
 
 ## Бакеты

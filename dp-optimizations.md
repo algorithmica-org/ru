@@ -271,9 +271,46 @@ $$
 f[i, j] - f[i, j-1] \leq f[i, j+1] - f[i, j]
 $$
 
-Иными словами, «выгода» добавления следующего отрезка с каждым разом не увеличивается.
+Иными словами, «выгода» добавления следующего отрезка с каждым разом не увеличивается. Тогда если мы найдем минимальную $\lambda$ такую, что $k \ge j$, то $f[i, k] = f[i, j]$.
 
-TODO
+```c++
+pair<ll, int> dp[maxn]; // dp[i] - (ответ, число отрезков)
+
+void init() {
+    for (int i = 0; i < maxn; i++) {
+        dp[i] = make_pair(inf, 0);
+    }
+}
+
+pair<ll, int> check(ll x) { // это можно соптимизировать
+    init();
+    dp[0] = make_pair(0ll, 0); // 1-индексация
+    for (int i = 1; i <= n; i++) {
+        for (int j = 0; j < i; j++) {
+            dp[i] = min(dp[i], {dp[j].first + cost[j + 1][i] + x, dp[j].second + 1});
+        }
+    }
+    return dp[n];
+}
+
+ll solve() {
+    ll l = -1e14; // границы надо подбирать очень аккуратно!
+    ll r = 1;
+    while (l + 1 < r) {
+        ll mid = (l + r) / 2;
+        pair<ll, int> x = check(mid);
+        if (x.second >= k) {
+            l = mid;
+        }
+        else {
+            r = mid;
+        }
+    }
+    pair<ll, int> result = check(l);
+    return result.first - l * return.second; // вычитаем штрафы
+}
+}
+```
 
 ## Суммируем
 
