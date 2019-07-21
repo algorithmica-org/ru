@@ -10,7 +10,7 @@
 * [Дерево Фенвика](https://algorithmica.org/ru/fenwick)
   почему работает, многомерный случай, бинарный поиск
 * [Разреженная таблица](https://algorithmica.org/ru/sparse-table)
-  static rmq, многомерный случай, disjoint st
+  static rmq, многомерный случай, disjoint sparse table
 :::::
 
 ::::: {.contents}
@@ -111,6 +111,7 @@
 ::::: {.contents}
 ### Разное
 
+* [Векторизация](https://algorithmica.org/ru/sse)
 * [Метод отжига](https://algorithmica.org/ru/annealing)
   физическая аналогия, эвристики, расстановка ферзей
 * [Стресс-тестирование](https://algorithmica.org/ru/stress-test)
