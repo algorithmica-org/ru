@@ -112,6 +112,7 @@
 ### Разное
 
 * [Векторизация](https://algorithmica.org/ru/sse)
+  risc vs cisc, ассемблер, simd, sse, маски, loop unrolling
 * [Метод отжига](https://algorithmica.org/ru/annealing)
   физическая аналогия, эвристики, расстановка ферзей
 * [Стресс-тестирование](https://algorithmica.org/ru/stress-test)
