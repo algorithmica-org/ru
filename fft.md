@@ -399,7 +399,41 @@ $$
 Реализация никак не отличается.
 
 ```c++
-// TODO: кто-нибудь законтрибьюте более быструю реализацию
+const int MOD = 998244353, W = 805775211, IW = 46809892;
+const int MAXN = (1 << 19), INV2 = 499122177;
+
+// W - первообразный корень MAXN-ной степени из 1, IW - обратное по модулю MOD к W
+// Первообразный корень (1 << 23)-й степени из 1 по модулю MOD равен 31; тогда первообразный корень (1 << X)-й степени для X от 1 до 23 равен (31 * (1 << (23 - X))) % MOD
+// INV2 - обратное к двум по модулю MOD
+// Данная реализация FFT перемножает два целых числа длиной до 250000 цифр за ~0.13 секунд без проблем с точностью и занимает всего 30 строк кода
+
+int pws[MAXN + 1], ipws[MAXN + 1];
+
+void init() {
+    pws[MAXN] = W; ipws[MAXN] = IW;
+    for (int i = MAXN / 2; i >= 1; i /= 2) {
+        pws[i] = (pws[i * 2] * 1ll * pws[i * 2]) % MOD;
+        ipws[i] = (ipws[i * 2] * 1ll * ipws[i * 2]) % MOD;
+    }
+}
+
+void fft(vector<int> &a, vector<int> &ans, int l, int cl, int step, int n, bool inv) {
+    if (n == 1) { ans[l] = a[cl]; return; }
+    fft(a, ans, l, cl, step * 2, n / 2, inv);
+    fft(a, ans, l + n / 2, cl + step, step * 2, n / 2, inv);
+    int cw = 1, gw = (inv ? ipws[n] : pws[n]);
+    for (int i = l; i < l + n / 2; i++) {
+        int u = ans[i], v = (cw * 1ll * ans[i + n / 2]) % MOD;
+        ans[i] = (u + v) % MOD;
+        ans[i + n / 2] = (u - v) % MOD;
+        if (ans[i + n / 2] < 0) ans[i + n / 2] += MOD;
+        if (inv) {
+            ans[i] = (ans[i] * 1ll * INV2) % MOD;
+            ans[i + n / 2] = (ans[i + n / 2] * 1ll * INV2) % MOD;
+        }
+        cw = (cw * 1ll * gw) % MOD;
+    }
+}
 ```
 
 С недавнего времени некоторые проблемсеттеры начали использовать именно этот модулю вместо стандартного $10^9+7$, чтобы намекнуть (или сбить с толку), что задача на FFT.
