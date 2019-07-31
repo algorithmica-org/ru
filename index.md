@@ -116,6 +116,8 @@
 * [Метод отжига](https://algorithmica.org/ru/annealing)
   физическая аналогия, эвристики, расстановка ферзей
 * [Стресс-тестирование](https://algorithmica.org/ru/stress-test)
+* [Ссылки](https://algorithmica.org/ru/links)
+  другие ресурсы, архивы задач, кружки, школы
 :::::
 
 ---
