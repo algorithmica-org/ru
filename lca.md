@@ -11,7 +11,7 @@
 
 Задачи на корневые деревья весьма бесполезны в реальной жизни, но зато очень интересны с алгоритмической точки зрения, и поэтому часто встречаются на олимпиадах по программированию.
 
-![](https://raw.githubusercontent.com/e-maxx-eng/e-maxx-eng/master/img/LCA_Euler.png)
+![](https://raw.githubusercontent.com/e-maxx-eng/e-maxx-eng/mastimg/LCA_Euler.png)
 
 ## Свойства dfs
 
