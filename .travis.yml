@@ -1,0 +1,8 @@
+language:
+   - python
+
+script:
+   - gem install travis
+   - curl -LO https://gist.githubusercontent.com/sslotin/bebe226efe3d2dbda2beb0a0f1a97026/raw/4592d537956488f3c2f14483ec15474b2c0c5da5/trigger-build.sh
+   - chmod +x trigger-build.sh
+   - ./trigger-build.sh $GITHUB_TOKEN
