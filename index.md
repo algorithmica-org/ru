@@ -11,7 +11,6 @@
   почему работает, многомерный случай, бинарный поиск
 * [Разреженная таблица](https://algorithmica.org/ru/sparse-table)
   static rmq, многомерный случай, disjoint sparse table
-* [Splay- и link-cut дерево]()
 :::::
 
 ::::: {.contents}
@@ -116,13 +115,16 @@
   risc vs cisc, ассемблер, simd, sse, маски, loop unrolling
 * [Метод отжига](https://algorithmica.org/ru/annealing)
   физическая аналогия, эвристики, расстановка ферзей
-* [Стресс-тестирование](https://algorithmica.org/ru/stress-test)
 * α [Ссылки](https://algorithmica.org/ru/links)
   другие ресурсы, архивы задач, кружки, школы
+* [Стресс-тестирование](https://algorithmica.org/ru/stress-test)
 :::::
 
 ---
 
-<div style='margin-top: 50px; margin-right: 25px; text-align: right'>
-<a href='https://github.com/algorithmica-org/articles'>Есть чем дополнить?</a>
+<div class='credits'>
+  <p>Спасибо Константину Амеличеву, Андрею Гаркавому, Максиму Деб Натху, Дмитрию Дубровину, Ивану Клигунову, Павлу Колесникову, Александру Кулькову, Глебу Лобанову, Александру Мамаеву, Ибрагиму Мамилову, Баиру Михайлову, Артему Рябову, Марии Тряпицыной, Андрею Филипюку, Андрею Чулкову, Булату Шелхонову <span style="white-space: nowrap">и много кому ещё за помощь и указания на ошибки.</span></p>
+  <p>Проект открытый, живёт <a href='https://github.com/algorithmica-org/ru'>на гитхабе</a>; BDFL: <a href='http://sereja.me/'>Сергей Слотин</a>.</p>
+</div>
+
 </div>
