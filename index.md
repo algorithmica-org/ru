@@ -11,6 +11,7 @@
   почему работает, многомерный случай, бинарный поиск
 * [Разреженная таблица](https://algorithmica.org/ru/sparse-table)
   static rmq, многомерный случай, disjoint sparse table
+* [Splay- и link-cut дерево]()
 :::::
 
 ::::: {.contents}
@@ -44,7 +45,7 @@
 
 * [Алгоритм Евклида](https://algorithmica.org/ru/euclid)
   расширенный алгоритм евклида, диофантовы уравнения
-* [Решето Эратосфена](https://algorithmica.org/ru/eratosphenes)
+* [Решето Эратосфена](https://algorithmica.org/ru/eratosthenes)
   линейное решето, факторизация всех чисел от 1 до n
 * [Нахождение обратного по модулю](https://algorithmica.org/ru/reciprocal)
   малая теорема ферма, алгоритм евклида, возведение в степень
@@ -116,7 +117,7 @@
 * [Метод отжига](https://algorithmica.org/ru/annealing)
   физическая аналогия, эвристики, расстановка ферзей
 * [Стресс-тестирование](https://algorithmica.org/ru/stress-test)
-* [Ссылки](https://algorithmica.org/ru/links)
+* α [Ссылки](https://algorithmica.org/ru/links)
   другие ресурсы, архивы задач, кружки, школы
 :::::
 
