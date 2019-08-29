@@ -3,35 +3,35 @@
 ::::: {.contents}
 ### Структуры данных
 
-* [Дерево отрезков](https://algorithmica.org/ru/segtree)
+* [Дерево отрезков](segtree)
   ленивые операции, динамическое ДО, персистентноcть
-* [Декартово дерево](https://algorithmica.org/ru/treap)
+* [Декартово дерево](treap)
   неявный ключ, персистентность
-* [Дерево Фенвика](https://algorithmica.org/ru/fenwick)
+* [Дерево Фенвика](fenwick)
   почему работает, многомерный случай, бинарный поиск
-* [Разреженная таблица](https://algorithmica.org/ru/sparse-table)
+* [Разреженная таблица](sparse-table)
   static rmq, многомерный случай, disjoint sparse table
 :::::
 
 ::::: {.contents}
 ### Общие техники
 
-* [Битовое сжатие](https://algorithmica.org/ru/bitset)
+* [Битовое сжатие](bitset)
   std::bitset, рюкзак, перемножение матриц, метод гаусса
-* β [Корневая эвристика](https://algorithmica.org/ru/sqrt)
+* β [Корневая эвристика](sqrt)
   на массивах и запросах, алгоритм мо, тяжелые объекты
-* β [Пересчёт динамики по слоям](https://algorithmica.org/ru/dp-optimizations)
+* β [Пересчёт динамики по слоям](dp-optimizations)
   оптимизация кнута, convex hull trick, лямбда-оптимизация
 :::::
 
 ::::: {.contents}
 ### Математика
 
-* [Алгоритм Карацубы](https://algorithmica.org/ru/karatsuba)
+* [Алгоритм Карацубы](karatsuba)
   быстрое умножение, мастер-теорема
-* β [Быстрое преобразование Фурье](https://algorithmica.org/ru/fft)
+* β [Быстрое преобразование Фурье](fft)
   интерполяция, комплексные числа, схема кули-тьюки, ntt
-* β [Линейная алгебра](https://algorithmica.org/ru/linalg)
+* β [Линейная алгебра](linalg)
   линейные функции, перемножение матриц, базис, метод гаусса
 * α [Теория вероятностей]()
   линейность матожидания, дисперсия, парадокс дней рождений
@@ -42,46 +42,46 @@
 ::::: {.contents}
 ### Комбинаторика и ТЧ
 
-* [Алгоритм Евклида](https://algorithmica.org/ru/euclid)
+* [Алгоритм Евклида](euclid)
   расширенный алгоритм евклида, диофантовы уравнения
-* [Решето Эратосфена](https://algorithmica.org/ru/eratosthenes)
+* [Решето Эратосфена](eratosthenes)
   линейное решето, факторизация всех чисел от 1 до n
-* [Нахождение обратного по модулю](https://algorithmica.org/ru/reciprocal)
+* [Нахождение обратного по модулю](reciprocal)
   малая теорема ферма, алгоритм евклида, возведение в степень
-* [Жадный алгоритм Радо-Эдмондса](https://algorithmica.org/ru/matroid)
+* [Жадный алгоритм Радо-Эдмондса](matroid)
   матроиды, жадный набор паросочетаний, расписаний, базисов
-* [Ро-алгоритм Полларда](https://algorithmica.org/ru/pollard)
+* [Ро-алгоритм Полларда](pollard)
   быстрая факторизация, пародокс дней рождений
 :::::
 
 ::::: {.contents}
 ### Графы
 
-* [Остовные деревья](https://algorithmica.org/ru/mst)
+* [Остовные деревья](mst)
   алгоритмы прима, крускала, борувки; снм, dynamic connectivity
-* [Наименьший общий предок](https://algorithmica.org/ru/lca)
+* [Наименьший общий предок](lca)
   запросы на путях и уровнях, двоичные подъемы, lca $\leftrightarrow$ rmq
-* [Паросочетания](https://algorithmica.org/ru/matching)
+* [Паросочетания](matching)
   лемма бержа, алгоритм куна, лемма холла, покрытие dag-а
-* [Поток минимальной стоимости](https://algorithmica.org/ru/mincost-maxflow)
+* [Поток минимальной стоимости](mincost-maxflow)
   критерий оптимальности, потенциалы джонсона
-* [Центроидная декомпозиция](https://algorithmica.org/ru/centroid)
+* [Центроидная декомпозиция](centroid)
   подсчёт путей с заданным свойством, запросы на путях
-* [Heavy-light декомпозиция](https://algorithmica.org/ru/hld)
+* [Heavy-light декомпозиция](hld)
 :::::
 
 ::::: {.contents}
 ### Строки
 
-* [Полиномиальное хэширование](https://algorithmica.org/ru/hashing)
+* [Полиномиальное хэширование](hashing)
   общее хэширование, вероятность коллизии, дд для строк
-* [Префикс- и z-функция](https://algorithmica.org/ru/string-searching)
+* [Префикс- и z-функция](string-searching)
   алгортм кнута-морриса-пратта, нахождение строки в строке
-* [Алгоритм Ахо-Корасик](https://algorithmica.org/ru/aho-corasick)
+* [Алгоритм Ахо-Корасик](aho-corasick)
   префиксное дерево, построение автомата ленивой динамикой
-* [Палиндромы](https://algorithmica.org/ru/palindromes)
+* [Палиндромы](palindromes)
   алгоритм манакера, дерево палиндромов
-* β [Суффиксный массив](https://algorithmica.org/ru/suffix-array)
+* β [Суффиксный массив](suffix-array)
   построение за $O(n \log n)$, массив lcp
 * α [Суффиксный автомат]()
 :::::
@@ -91,9 +91,9 @@
 ::::: {.contents}
 ### Геометрия
 
-* [Ликбез по базовой геометрии](https://algorithmica.org/ru/geometry)
+* [Ликбез по базовой геометрии](geometry)
   ооп в c++, скалярное и векторное произведение и применения
-* β [Выпуклые оболочки](https://algorithmica.org/ru/convex-hulls)
+* β [Выпуклые оболочки](convex-hulls)
   алгоритмы джарвиса, грэхэма, эндрю, чана
 :::::
 
@@ -111,13 +111,13 @@
 ::::: {.contents}
 ### Разное
 
-* [Векторизация](https://algorithmica.org/ru/sse)
+* [Векторизация](sse)
   risc vs cisc, ассемблер, simd, sse, маски, loop unrolling
-* [Метод отжига](https://algorithmica.org/ru/annealing)
+* [Метод отжига](annealing)
   физическая аналогия, эвристики, расстановка ферзей
-* α [Ссылки](https://algorithmica.org/ru/links)
+* α [Ссылки](links)
   другие ресурсы, архивы задач, кружки, школы
-* [Стресс-тестирование](https://algorithmica.org/ru/stress-test)
+* [Стресс-тестирование](stress-test)
 :::::
 
 ---

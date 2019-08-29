@@ -80,7 +80,7 @@ int gcd(int a, int b) {
 
 ### Время работы
 
-Оценка $O(\log n)$ относится к худшему случаю. Асимптотика *в среднем* это [более интересный вопрос](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%95%D0%B2%D0%BA%D0%BB%D0%B8%D0%B4%D0%B0#%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0), играющий существенную роль в [некоторых алгоритмах](https://algorithmica.org/ru/pollard).
+Оценка $O(\log n)$ относится к худшему случаю. Асимптотика *в среднем* это [более интересный вопрос](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%95%D0%B2%D0%BA%D0%BB%D0%B8%D0%B4%D0%B0#%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D0%B0), играющий существенную роль в [некоторых алгоритмах](pollard).
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Euclidean_Algorithm_Running_Time.svg/2560px-Euclidean_Algorithm_Running_Time.svg.png)
 
@@ -98,7 +98,7 @@ $$
 a \cdot x + b \cdot y = g
 $$
 
-Эта модификация алгоритма интересна, потому что с помощью неё можно искать [обратный элемент по модулю](https://algorithmica.org/ru/reciprocal): такой элемент $a^{-1}$, что $a \cdot a^{1} \equiv 1$, что то же самое, что найти решение в целых числах:
+Эта модификация алгоритма интересна, потому что с помощью неё можно искать [обратный элемент по модулю](reciprocal): такой элемент $a^{-1}$, что $a \cdot a^{1} \equiv 1$, что то же самое, что найти решение в целых числах:
 
 $$
 a^{-1} \cdot a + k \cdot m = 1
