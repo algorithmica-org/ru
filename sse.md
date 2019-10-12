@@ -33,7 +33,211 @@ int main() {
 
 Скомпилировавшись и запустившись при тех же условиях, программа завершается уже за 1.24 секунды. Это почти в два раза быстрее, при том, что сам код и уровень оптимизации мы не меняли.
 
-Чтобы понять, что здесь происходит, нам нужно сначала разъяснить некоторые особенности работы современных компьютеров. (Знающие ассемблер могут отмотать примерно до ⅓ статьи.)
+Чтобы понять, что здесь происходит, нам нужно сначала разъяснить некоторые особенности работы современных компьютеров. #pragma GCC optimize("03")
+
+#pragma GCC target("avx2")
+
+#include <bits/stdc++.h>
+using namespace std;
+
+const int logn = 20;
+const int n = (1<<logn), m = 1e5;
+int t[n], q[m], res[m], rs[m];
+
+int sum(int r) {
+    int res = 0;
+    for (; r > 0; r -= r & -r)
+        res += t[r];
+    return res;
+}
+
+void timeit(void (*f)()) {
+    clock_t start = clock();
+    for (int i = 0; i < 1000; i++)
+        f();
+    cout << double(clock() - start) / CLOCKS_PER_SEC << endl;
+}
+
+void simple_fenwick() {
+    for (int i = 0; i < m; i++)
+        res[i] = sum(q[i]);
+}
+
+void vectorized_fenwick() {
+    memcpy(rs, q, sizeof q);
+    for (int l = 0; l < logn; l++) {
+        for (int i = 0; i < m; i++) {
+            int x = rs[i];
+            res[i] += t[x];
+            x -= (x & -x);
+            rs[i] = x;
+        }
+    }
+}
+
+int main() {
+    for (int i = 0; i < m; i++)
+        q[i] = rand() % n;
+
+    timeit(simple_fenwick);
+    timeit(vectorized_fenwick);
+    
+    return 0;
+
+}#pragma GCC optimize("03")
+
+#pragma GCC target("avx2")
+
+#include <bits/stdc++.h>
+using namespace std;
+
+const int logn = 20;
+const int n = (1<<logn), m = 1e5;
+int t[n], q[m], res[m], rs[m];
+
+int sum(int r) {
+    int res = 0;
+    for (; r > 0; r -= r & -r)
+        res += t[r];
+    return res;
+}
+
+void timeit(void (*f)()) {
+    clock_t start = clock();
+    for (int i = 0; i < 1000; i++)
+        f();
+    cout << double(clock() - start) / CLOCKS_PER_SEC << endl;
+}
+
+void simple_fenwick() {
+    for (int i = 0; i < m; i++)
+        res[i] = sum(q[i]);
+}
+
+void vectorized_fenwick() {
+    memcpy(rs, q, sizeof q);
+    for (int l = 0; l < logn; l++) {
+        for (int i = 0; i < m; i++) {
+            int x = rs[i];
+            res[i] += t[x];
+            x -= (x & -x);
+            rs[i] = x;
+        }
+    }
+}
+
+int main() {
+    for (int i = 0; i < m; i++)
+        q[i] = rand() % n;
+
+    timeit(simple_fenwick);
+    timeit(vectorized_fenwick);
+    
+    return 0;
+
+}#pragma GCC optimize("03")
+
+#pragma GCC target("avx2")
+
+#include <bits/stdc++.h>
+using namespace std;
+
+const int logn = 20;
+const int n = (1<<logn), m = 1e5;
+int t[n], q[m], res[m], rs[m];
+
+int sum(int r) {
+    int res = 0;
+    for (; r > 0; r -= r & -r)
+        res += t[r];
+    return res;
+}
+
+void timeit(void (*f)()) {
+    clock_t start = clock();
+    for (int i = 0; i < 1000; i++)
+        f();
+    cout << double(clock() - start) / CLOCKS_PER_SEC << endl;
+}
+
+void simple_fenwick() {
+    for (int i = 0; i < m; i++)
+        res[i] = sum(q[i]);
+}
+
+void vectorized_fenwick() {
+    memcpy(rs, q, sizeof q);
+    for (int l = 0; l < logn; l++) {
+        for (int i = 0; i < m; i++) {
+            int x = rs[i];
+            res[i] += t[x];
+            x -= (x & -x);
+            rs[i] = x;
+        }
+    }
+}
+
+int main() {
+    for (int i = 0; i < m; i++)
+        q[i] = rand() % n;
+
+    timeit(simple_fenwick);
+    timeit(vectorized_fenwick);
+    
+    return 0;
+
+}#pragma GCC optimize("03")
+
+#pragma GCC target("avx2")
+
+#include <bits/stdc++.h>
+using namespace std;
+
+const int logn = 20;
+const int n = (1<<logn), m = 1e5;
+int t[n], q[m], res[m], rs[m];
+
+int sum(int r) {
+    int res = 0;
+    for (; r > 0; r -= r & -r)
+        res += t[r];
+    return res;
+}
+
+void timeit(void (*f)()) {
+    clock_t start = clock();
+    for (int i = 0; i < 1000; i++)
+        f();
+    cout << double(clock() - start) / CLOCKS_PER_SEC << endl;
+}
+
+void simple_fenwick() {
+    for (int i = 0; i < m; i++)
+        res[i] = sum(q[i]);
+}
+
+void vectorized_fenwick() {
+    memcpy(rs, q, sizeof q);
+    for (int l = 0; l < logn; l++) {
+        for (int i = 0; i < m; i++) {
+            int x = rs[i];
+            res[i] += t[x];
+            x -= (x & -x);
+            rs[i] = x;
+        }
+    }
+}
+
+int main() {
+    for (int i = 0; i < m; i++)
+        q[i] = rand() % n;
+
+    timeit(simple_fenwick);
+    timeit(vectorized_fenwick);
+    
+    return 0;
+
+}(Знающие ассемблер могут отмотать примерно до ⅓ статьи.)
 
 ## Complex Instruction Set Computing
 
@@ -148,8 +352,8 @@ for (int i = 0; i < 100; i += 4) {
 
 ```c++
 int sum(int a[], int n) {
-    int res = 0;
-    
+    int res = 0;
+
     // создадим регистр, в котором будем хранить 8 текущих сумм
     __m256i x = _mm256_setzero_si256();
     for (int i = 0; i + 8 <= n; i += 8) {
@@ -161,7 +365,7 @@ int sum(int a[], int n) {
     int *b = (int*) &x;
     for (int i = 0; i < 8; i++)
         res += b[i];
-    
+
     // добавим остаток массива
     for (int i = (n / 8) * 8; i < n; i++)
         res += a[i];
@@ -400,6 +604,93 @@ for (int i = 0; i < n; i++)
 Здесь «ivdep» означает **i**gnore **v**ector **dep**endencies — данные внутри цикла ни от чего не зависят.
 
 Существует [много других способов](https://software.intel.com/sites/default/files/m/4/8/8/2/a/31848-CompilerAutovectorizationGuide.pdf) намекнуть компилятору, что конкретно мы имели в виду, но в сложных случаях — когда внутри цикла используются `if`-ы или вызываются какие-нибудь внешние функции — проще спуститься до уровня интринзиков и написать всё самому.
+
+## Gather и scatter
+
+Долгое время большом препятствием на пути к оптимизации был тот факт, что чтобы применить SIMD-инструкцию к данным, нужно сначала собрать их всех в одном регистре, что в некоторых случаях может быть дороже, чем выгода от векторизации — например, при перемножении разреженных матриц.
+
+Чтобы это ускорить, в AVX2 добавили два новых класса операций: gather и scatter. Первый принимает указатели на место в памяти и загружает их содержимое в правильном порядке в нужный регистр, а второй наоборот — принимает регистр со значениями и записывает их в указанные места в памяти.
+
+![](https://gainperformance.files.wordpress.com/2017/06/indexed_gather_scatter3.png)
+
+Эти операции работают значительно быстрее, хотя и не в 8 раз: теперь они больше упираются в память, чем в процессор.
+
+Нам, спортивным программистам, не очень интересна разреженная линейная алгебра, поэтому рассмотрим другой поучительный пример работы с несплошной памятью: оптимизацию [дерева Фенвика](fenwick). На этот раз интринзики писать не будем и целиком положимся на автовекторизацию.
+
+```cpp
+#pragma GCC optimize("03")
+#pragma GCC target("avx2")
+
+#include <bits/stdc++.h>
+using namespace std;
+
+const int logn = 20;
+const int n = (1<<logn), m = 1e5;
+int t[n], q[m], res[m], rs[m];
+//  ^ фенвик, запросы, результаты
+
+int sum(int r) {
+    int res = 0;
+    for (; r > 0; r -= r & -r)
+        res += t[r];
+    return res;
+}
+
+void simple_fenwick() {
+    for (int i = 0; i < m; i++)
+        res[i] = sum(q[i]);
+}
+
+void vectorized_fenwick() {
+    memcpy(rs, q, sizeof q);
+    
+    // то же самые циклы фенвика, только вдоль запросов;
+    // вместо остановки по условию, цикл исполняется logn раз,
+    // из которых сколько-то последних ничего не изменят
+    for (int l = 0; l < logn; l++) {
+        for (int i = 0; i < m; i++) {
+            int x = rs[i];  // это будет заменено на gather
+            res[i] += t[x]; // это будет заменено на add
+            x -= (x & -x);  // это будет заменено на ещё 3 операции
+            rs[i] = x;      // это будет заменено на scatter
+        }
+    }
+    // так как (x & -x) равен последнему биту,
+    // а t[0] равен нулю, то алгоритм работает корректно,
+    // хоть и в среднем половина операций исполняется впустую    
+}
+
+void timeit(void (*f)()) {
+    clock_t start = clock();
+    for (int i = 0; i < 1000; i++)
+        f();
+    cout << double(clock() - start) / CLOCKS_PER_SEC << endl;
+}
+
+int main() {
+    for (int i = 0; i < m; i++)
+        q[i] = rand() % n;
+
+    timeit(simple_fenwick);
+    timeit(vectorized_fenwick);
+
+    return 0;
+}
+```
+
+Эксперименты с памятью всегда интересно проводить с разными размерами структуры:
+
+* При $n \approx 10^4$ векторизованный вариант быстрее в ~4 раза.
+
+* При $n \approx 10^5$ векторизованный вариант быстрее в ~3 раза.
+
+* При $n \approx 10^6$ векторизованный вариант быстрее в ~2 раза.
+
+* При $n \approx 10^7$ векторизованный вариант **медленнее** в ~3 раза.
+
+Такие результаты объясняются тем, что с ростом $n$ структура начинает не вмещаться в разные уровни кэша и становится больше зависеть не от операций  с регистрами, а от количества обращений в память — а векторизованная реализация здесь проигрывает, потому что в среднем делает их в два раза больше, чем надо.
+
+При $n \approx 10^7$ дерево Фенвика не влезает даже в L3, и программа начинает почти каждый раз ходить в RAM — именно поэтому скачок там настолько существенный.
 
 ## Разное
 
