@@ -232,7 +232,7 @@ Pair split (Node *p, int x) {
 int sum (int l, int r) {
     Pair rq = split(root, r);
     Pair lq = split(rq.first, l);
-    int res = sum(lr.second);
+    int res = sum(lq.second);
     root = merge(lq.first, merge(lq.second, rq.second));
     return res;
 }
