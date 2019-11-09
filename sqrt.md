@@ -93,7 +93,7 @@ struct query { int l, r, x; };
 vector<query> buffer; // запросы, не учтенные в префиксных суммах
 
 int sum(int l, int r) {
-    int res = s[r+1] - s[l];
+    int res = s[r + 1] - s[l];
     for (query q : buffer)
         // пересечем запрос суммы со всеми запросами
         res += q.x * max(0, min(r, q.r) - max(l, q.l));
@@ -270,7 +270,7 @@ for (int v = 0; v < n; v++) {
     vector<int> &t = g[v];
     // отсортируем их и удалим какой-то суффикс
     sort(t.begin(), t.end(), cmp);
-    while (t.size() > 0 && cmp(t[t.size()-1], v))
+    while (t.size() > 0 && cmp(t.back(), v))
         t.pop_back();
     reverse(t.begin(), t.end());
 }
