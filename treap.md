@@ -328,9 +328,9 @@ void push (node *v) {
     if (v->rev) {
         swap(v->l, v->r);
         if (v->l)
-            v->rev ^= 1;
+            v->l->rev ^= 1;
         if (v->r)
-            v->rev ^= 1;
+            v->r->rev ^= 1;
     }
     v->rev = 0;
 }
