@@ -23,10 +23,10 @@ int a[maxn];
 void stupid() {
     int n;
     cin >> n;
-    for (int i = 0; i < n; i++) 
+    for (int i = 0; i < n; i++)
         cin >> a[i];
     int ans = 1e9;
-    for (int i = 0; i < n; i++) 
+    for (int i = 0; i < n; i++)
         ans = min(ans, a[i]);
     cout << ans;
 }
@@ -40,10 +40,10 @@ int a[maxn];
 void smart() {
     int n;
     cin >> n;
-    for (int i = 0; i < n; i++) 
+    for (int i = 0; i < n; i++)
         cin >> a[i];
     int ans = 1e9;
-    for (int i = 1; i < n; i++) 
+    for (int i = 1; i < n; i++)
         ans = min(ans, a[i]);
     cout << ans;
 }
@@ -71,7 +71,7 @@ int stupid() {
     int n;
     cin >> n;
     int ans = 1e9;
-    for (int i = 0; i < n; i++) 
+    for (int i = 0; i < n; i++)
         ans = min(ans, a[i]);
     return ans;
 }
@@ -80,7 +80,7 @@ int smart() {
     int n;
     cin >> n;
     int ans = 1e9;
-    for (int i = 1; i < n; i++) 
+    for (int i = 1; i < n; i++)
         ans = min(ans, a[i]);
     return ans;
 }
@@ -126,28 +126,31 @@ int main() {
 
 Вот примерный код скрипта `checker.py`:
 
-```python
+```python3
 import os, sys
 
-f1, f2, gen, iters = sys.argv
+_, f1, f2, gen, iters = sys.argv # первый аргумент - 'checker.py' поэтому "откинем" его с помощью _
 
 for i in range(int(iters)):
     print('Test', i+1)
     os.popen('python3 %s > test.txt' % gen)
-    v1 = os.popen('./%s < test.txt' % f1).read()
-    v2 = os.popen('./%s < test.txt' % f2).read()
+    v1 = os.popen('./%s < test.txt' % f1).readlines()
+    v2 = os.popen('./%s < test.txt' % f2).readlines()
     if v1 != v2:
-        print test
-        print("Correct:")
-        print v1
-        print("Wrong:")
-        print v2
-        break
+        print("FAIL!\nInput:")
+        print(*(open("text.txt").readlines()))
+        print("Correct output:")
+        print(*v1)
+        print("Wrong output:")
+        print(*v2)
+        sys.exit()
+print("No output differences found.")
 ```
 
 * Автор обычно запускает его командой `python3 checker.py stupid smart gen.py 100`, предварительно скомпилировав `stupid` и `smart` в ту же директорию, что и сам `checker.py`.
 * При желании можно компилировать прямо внутри скрипта.
+* Не забывайте, что если хотя бы одна из программ не выводит перевод строки в конце файла, то чекер посчитает, что вывод разный.
 * Если задача подразумевает неоднозначный вывод (к примеру, вывести индекс минимума — таких может быть несколько), то вместо `v1 != v2` следует использовать сторонний скрипт `compare.py`.
-* Скрипт написан под Linux. Для Windows нужно убрать «`./`» во всех системных вызовах.
+* Скрипт написан под Linux. Для Windows нужно убрать «`./`» во всех системных вызовах и вместо "python3" писать "python".
 
 *Примечание*. Ну такой вот примерно рецепт усредненный, потому что вариаций масса. Берется неправильное решение, оно не работает, рабочий код — это не про код моего бати. Он берет это решение, вываливает его в скрипт и начинает запускать. Добавляет огромное количество тестов, крайних случаев, рандома и МАКСТЕСТОВ! для проверки. Все это прогоняется вместе с медленным решением. Потом скрипт находит баг и системный блок остужается на балконе. Потом батя заносит тест и щедро заполнив код отладочным выводом начинает дебажить. При этом параллельно ест и засыпает крошками клавиатуру. Ест и приговаривает полушепотом ух ###. При этом у него на лбу аж пот выступает. Любезно мне иногда предлагает подебажить, но я отказываюсь. Надо ли говорить о том какой код получается потом? Вонища такая, что тестирующая система падает.
