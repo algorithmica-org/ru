@@ -71,6 +71,12 @@ vector<r> jarvis_convex_hull(vector<r> points) {
 Каждая точка будет добавлена один раз удалена не более одного раза, что занимает константное количество операций. Соответственно, время работы будет упираться во время работы сортировки, то есть $O(n \log n)$.
 
 ```c++
+struct r {
+    int x, y;
+    r operator-(r a) {return {x - a.x; y - a.y};}
+    // в векторном произведении возможно переполнение int
+    int operator^(r a) {return x * a.y - y * a.x;}
+};
 vector<r> graham_convex_hull(vector<r> points) {
     // находим p0, как и раньше
     r p0 = points[0];
@@ -79,22 +85,34 @@ vector<r> graham_convex_hull(vector<r> points) {
             p0 = p;
 
     // TODO: удалить p0
-
+    // сделаем p0 началом координат (для сокращения кода компаратора)
+    for (r &x : points) {
+        x.x -= p0.x;
+        x.y -= p0.y;
+    }
     // сортируем точки по полярному углу
     sort(points.begin(), points.end(), [&](r a, r b){
-        return (a - p0) ^ (b - p0) > 0;
-    });
+        return a ^ b > 0 || a ^ b == 0 && a.x * a.x + a.y * a.y < b.x * b.x + b.y * b.y;
+    }); // если векторное произведение == 0 то сначала будем рассматривать точку, которая ближе к p0
 
-    vector<r> s = {p0};
+    vector<r> hull;
     for (r p : points) {
-        while (...) {
-             s[s.size()-2] = s[s.size()-1];
-             s.pop_back();            
+        // удаляем последнюю точку МВО пока она образует невыпуклость (оператор "-" у точек должен быть перегружен, как и "^"
+        /*
+        Пусть т. A - последняя в оболочке, т. B - предпоследняя, т. C - точка, которую мы хотим добавить
+        Тогда невыпуклость(или вырожденность) образуется, когда (C - A) ^ (B - A) <= 0
+        */
+        while (hull.size() >= 2 && ((p - hull.back()) ^ (hull[hull.size() - 2] - hull.back()) <= 0) {
+             hull.pop_back();
         }
-        s.push_back(p);
+        hull.push_back(p);
     }
-
-    return s;
+    // переместим начало координат обратно
+    for (r &x : hull) {
+        x.x += p0.x;
+        x.y += p0.y;
+    }
+    return hull;
 }
 ```
 
