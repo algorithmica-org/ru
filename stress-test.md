@@ -126,7 +126,7 @@ int main() {
 
 Вот примерный код скрипта `checker.py`:
 
-```python3
+```python
 import os, sys
 
 _, f1, f2, gen, iters = sys.argv # первый аргумент - 'checker.py' поэтому "откинем" его с помощью _
