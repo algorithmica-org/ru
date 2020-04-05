@@ -27,7 +27,7 @@ int a[maxn], mn[logn][maxn];
 
 int rmq(int l, int r) { // полуинтервал [l; r)
     int t = __lg(r - l);
-    return min(mn[l][t], mn[r - (1 << t)][t]);
+    return min(mn[t][l], mn[t][r - (1 << t)]);
 }
 
 // Это считается где-то в первых строчках main:
