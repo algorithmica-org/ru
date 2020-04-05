@@ -2,7 +2,7 @@
 
 Статья не затрагивает теоирию чисел и линейную алгебру. 
 
-Воможно, поможет почитать про [нахождение обратного](https://algorithmica.org/ru/multiplicative_inverse).
+Воможно, поможет почитать про [нахождение обратного](reciprocal).
 
 [Конкретная математика]([http://sereja.me/f/discrete_math_knuth.pdf](http://sereja.me/f/discrete_math_knuth.pdf) Грэхэма, Кнута и Паташика. 
 
