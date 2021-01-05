@@ -94,9 +94,9 @@ void dfs(int v, int p = -1) {
     d[v] = h[v] = (p == -1 ? 0 : h[p] + 1);
     for (int u : g[v]) {
         if (u != p) {
-            if (used[u]) // если рябро обратное
+            if (used[u]) // если ребро обратное
                 d[v] = min(d[v], h[u]);
-            else { // если рябро прямое
+            else { // если ребро прямое
                 dfs(u, v);
                 d[v] = min(d[v], d[u]);
                 if (h[v] < d[v]) {
