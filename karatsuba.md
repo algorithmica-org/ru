@@ -32,8 +32,8 @@ void carry(int *a, int n) {
     int d = 0;
     for (int i = 0; i < n; i++) {
         a[i] += d;
-        d = a[i] % base;
-        a[i] /= base;
+        d = a[i] / base;
+        a[i] %= base;
     }
 }
 ```
