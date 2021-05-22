@@ -65,7 +65,7 @@ while (!q.empty()) {
     q.pop();
     for (int u : t[v]) {
         cnt[u]--; // удаляем это ребро
-        if (status[v] == unknown) {
+        if (status[u] == unknown) {
             // из u есть ребро в проигрышную -- значит она выигрышная
             if (status[v] == loss)
                 status[u] = win;
@@ -73,7 +73,7 @@ while (!q.empty()) {
             if (status[v] == win && cnt[u] == 0)
                 status[u] = loss;
             // если после проверок у вершины определилась выигрышность, то её можно добавить в очередь
-            if (status[v] != unknown)
+            if (status[u] != unknown)
                 q.push(u);
         }
     }
