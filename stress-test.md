@@ -133,7 +133,7 @@ _, f1, f2, gen, iters = sys.argv # первый аргумент - 'checker.py' 
 
 for i in range(int(iters)):
     print('Test', i+1)
-    os.popen('python3 %s > test.txt' % gen)
+    os.system('python3 %s > test.txt' % gen)
     v1 = os.popen('./%s < test.txt' % f1).readlines()
     v2 = os.popen('./%s < test.txt' % f2).readlines()
     if v1 != v2:
